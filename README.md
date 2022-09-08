@@ -14,6 +14,8 @@ Optional:
    and talk. After that switch back to whatever the current task you are doing, e.g. switching back to
    magplant if you're not done placing, or fist if you're not done breaking.
 
+Note:
+
 This isn't a fully automated bot yet
 Some error may occur such as:
 1. Not placing blocks
