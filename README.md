@@ -15,7 +15,6 @@ Optional:
    magplant if you're not done placing, or fist if you're not done breaking.
 
 Note:
-
 This isn't a fully automated bot yet
 Some error may occur such as:
 1. Not placing blocks
