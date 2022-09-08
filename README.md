@@ -9,6 +9,7 @@ How to use:
 3. Click the start button
 
 Optional:
+
 4. Incase people ask you if you're doing an autoclicker/bot, just switch to wrench in your inventory
    and talk. After that switch back to whatever the current task you are doing, e.g. switching back to
    magplant if you're not done placing, or fist if you're not done breaking.
