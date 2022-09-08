@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "qmEtUm0g4x35bRln4EVI5MJ5NxW23Ix5q440nB7GrG1VtQ5J748yg0g/3opSyTm1mtt6bpCxYIBJLKhY4hnpOA==",
+  "success": true,
+  "projectFilePath": "D:\\Alven - School works\\SIDE TASK\\PROGRAMMING\\C#\\Mod Menu\\Mod Menu\\Mod Menu.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Questeria\\.nuget\\packages\\memory.dll.x64\\1.2.24\\memory.dll.x64.1.2.24.nupkg.sha512",
+    "C:\\Users\\Questeria\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

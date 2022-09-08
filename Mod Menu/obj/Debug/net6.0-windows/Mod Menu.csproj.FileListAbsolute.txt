@@ -1,0 +1,20 @@
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Mod Menu.exe
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Mod Menu.deps.json
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Mod Menu.runtimeconfig.json
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Mod Menu.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Mod Menu.pdb
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.csproj.AssemblyReference.cache
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.csproj.GenerateResource.cache
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.GeneratedMSBuildEditorConfig.editorconfig
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.AssemblyInfoInputs.cache
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.AssemblyInfo.cs
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.csproj.CoreCompileInputs.cache
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\refint\Mod Menu.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.pdb
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.genruntimeconfig.cache
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\ref\Mod Menu.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Memory.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod Menu.csproj.CopyComplete
+D:\Alven - School works\SIDE TASK\PROGRAMMING\C#\Mod Menu\Mod Menu\obj\Debug\net6.0-windows\Mod_Menu.Form1.resources
