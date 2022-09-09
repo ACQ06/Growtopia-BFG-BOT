@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mod_Menu;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,8 +9,9 @@ namespace Modes
 {
     class Break
     {
-        public static void Start(List<Utility.Vector2> TargetCoords)
+        public static void Start()
         {
+            List<Utility.Vector2> TargetCoords = Form1.TargetCoords();
             int PlayerX = (int)Utility.LocalPlayer.X() / 32;
             int PlayerY = (int)Utility.LocalPlayer.Y() / 32;
             int TargetX, TargetY;
@@ -19,10 +21,11 @@ namespace Modes
                 TargetY = TargetCoords[i].y;
                 while (Utility.World.Foreground()[TargetY + PlayerY, TargetX + PlayerX] != 0)
                 {
-                    //Console.WriteLine("Started Breaking...");
-                    World2Screen.Click.TargetBlock(TargetX + PlayerX, TargetY + PlayerY);
+                    if (Form1.TargetCoords().Count != 0)
+                    {
+                        World2Screen.Click.TargetBlock(TargetX + PlayerX, TargetY + PlayerY);
+                    }
                 }
-                //Console.WriteLine($"Done Breaking the {i} block");
                 PlayerX = (int)Utility.LocalPlayer.X() / 32;
                 PlayerY = (int)Utility.LocalPlayer.Y() / 32;
             }
@@ -30,8 +33,9 @@ namespace Modes
     }
     class Place
     {
-        public static void Start(List<Utility.Vector2> TargetCoords)
+        public static void Start()
         {
+            List<Utility.Vector2> TargetCoords = Form1.TargetCoords();
             int PlayerX = (int)Utility.LocalPlayer.X()/32;
             int PlayerY = (int)Utility.LocalPlayer.Y() / 32;
             int TargetX, TargetY;
@@ -41,10 +45,11 @@ namespace Modes
                 TargetY = TargetCoords[i].y;
                 while (Utility.World.Foreground()[TargetY+PlayerY,TargetX+PlayerX] == 0)
                 {
-                    //Console.WriteLine("Started Placing...");
-                    World2Screen.Click.TargetBlock(TargetX + PlayerX, TargetY + PlayerY);
+                    if (Form1.TargetCoords().Count != 0)
+                    {
+                        World2Screen.Click.TargetBlock(TargetX + PlayerX, TargetY + PlayerY);
+                    }                    
                 }
-                //Console.WriteLine($"Done Placing the {i} block");
                 PlayerX = (int)Utility.LocalPlayer.X() / 32;
                 PlayerY = (int)Utility.LocalPlayer.Y() / 32;
             }

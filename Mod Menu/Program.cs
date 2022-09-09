@@ -10,6 +10,7 @@ namespace Mod_Menu
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
+            
         }
     }
 }

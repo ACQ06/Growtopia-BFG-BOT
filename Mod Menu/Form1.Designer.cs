@@ -57,7 +57,6 @@
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
-            this.StartButton = new System.Windows.Forms.Button();
             this.Magplant = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -458,21 +457,6 @@
             this.button25.UseVisualStyleBackColor = true;
             this.button25.Click += new System.EventHandler(this.button25_Click);
             // 
-            // StartButton
-            // 
-            this.StartButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.StartButton.FlatAppearance.BorderSize = 0;
-            this.StartButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StartButton.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.StartButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
-            this.StartButton.Location = new System.Drawing.Point(113, 355);
-            this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(180, 30);
-            this.StartButton.TabIndex = 81;
-            this.StartButton.Text = "START";
-            this.StartButton.UseVisualStyleBackColor = false;
-            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
-            // 
             // Magplant
             // 
             this.Magplant.AutoSize = true;
@@ -493,7 +477,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.ClientSize = new System.Drawing.Size(400, 450);
             this.Controls.Add(this.Magplant);
-            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.button25);
             this.Controls.Add(this.button24);
             this.Controls.Add(this.button23);
@@ -563,7 +546,6 @@
         private Button button23;
         private Button button24;
         private Button button25;
-        private Button StartButton;
         private CheckBox Magplant;
     }
 }

@@ -1,14 +1,15 @@
 using Memory;
+using System;
 using System.Runtime.InteropServices;
 
 namespace Mod_Menu
 {
     public partial class Form1 : Form
     {
-        public static bool start, allowPlace, allowBreak, allowMag;
+        public static bool allowPlace, allowBreak;
         public static bool[] buttons = new bool[25];
         public static int ItemID;
-
+        public static Thread Bot = new Thread(Farm);
 
         public Form1()
         {
@@ -17,12 +18,8 @@ namespace Mod_Menu
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //AllocConsole();
+            Bot.Start();
         }
-
-        //[DllImport("kernel32.dll", SetLastError = true)]
-        //[return: MarshalAs(UnmanagedType.Bool)]
-        //static extern bool AllocConsole();
 
         private void button25_Click(object sender, EventArgs e)
         {
@@ -374,54 +371,34 @@ namespace Mod_Menu
             }
         }
 
-        
-        public static void Farm()
+        public static bool IsFormOpen(Type formType)
         {
-            while (start)
-            {
-                if (allowPlace)
-                {
-                    if (allowMag)
-                    {
-                        Utility.LocalPlayer.CurrentItem(5640);
-                        Modes.Place.Start(TargetCoords());
-                    }
-
-                    else
-                    {
-                        Utility.LocalPlayer.CurrentItem(ItemID);
-                        Modes.Place.Start(TargetCoords());
-                    }
-                    
-                }
-                if (allowBreak)
-                {
-                    //Console.WriteLine("Breaking");
-                    Utility.LocalPlayer.CurrentItem(18);
-                    Modes.Break.Start(TargetCoords());
-                }
-                //Console.Clear();
-                TargetCoords().ForEach(Console.WriteLine);
-                Thread.Sleep(100);
-            }
-            World2Screen.Click.TargetBlock(0, 0);
+            foreach (Form form in Application.OpenForms)
+                if (form.GetType().Name == form.Name)
+                    return true;
+            return false;
         }
 
-
-        private void StartButton_Click(object sender, EventArgs e)
+        public static void Farm()
         {
-            start = !start;
-            Thread farm = new Thread(Farm);
-            if (start)
+            while (IsFormOpen(typeof(Form1)))
             {
-                StartButton.Text = "STOP";
-                farm.Start();
-            }
+                while (TargetCoords().Count != 0 && (allowBreak || allowPlace) && (ItemID != 0))
+                {
+                    if (allowPlace)
+                    {
+                        Utility.LocalPlayer.CurrentItem(ItemID);
+                        Modes.Place.Start();
 
-            else
-            {
-                StartButton.Text = "START";
-                World2Screen.Click.TargetBlock(0, 0);
+                    }
+                    if (allowBreak)
+                    {
+                        Utility.LocalPlayer.CurrentItem(18);
+                        Modes.Break.Start();
+                    }
+                    TargetCoords().ForEach(Console.WriteLine);
+                    Thread.Sleep(100);
+                }
             }
         }
 
@@ -447,12 +424,7 @@ namespace Mod_Menu
         {
             if (placeblock.Checked)
             {
-                allowMag = true;
-            }
-
-            else
-            {
-                allowMag = false;
+                ItemID = 5640;
             }
         }
 
@@ -471,6 +443,7 @@ namespace Mod_Menu
         public static List<Utility.Vector2> TargetCoords()
         {
             List<Utility.Vector2> TargetBlocks = new List<Utility.Vector2>();
+            Console.WriteLine("Called the method");
             for (int i = 0; i < 25; i++)
             {
                 if (buttons[i])
@@ -501,6 +474,7 @@ namespace Mod_Menu
                     }
                 }
             }
+            Console.WriteLine($"Returning {TargetBlocks.Count} target coords");
             return TargetBlocks;
         }
     }
