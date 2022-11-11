@@ -1,6 +1,8 @@
 # Growtopia-BFG-BOT
 ![UIv2](https://user-images.githubusercontent.com/89824842/189279520-a1eb286a-c1c4-4d08-9ebc-f09f55997a81.Png)
 
+DISCONTINUED!
+
 NEW PATCHES:
 1. Removed Start/Stop Button (Program will not automatically start if you select the area, itemid or magplant, break or place).
 2. Fixed not-restarting issue (Program will now stop if there are no selected area, or no mode is chosen(break/place) or no itemid/magplant).
